@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - SightLink</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" type="image/png" src="public/icon.png">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="public/icon.png" alt="SightLink Logo" class="brand-icon" />
+                SightLink
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hci.html">HCI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="monthly.html">Monthly Breakdown</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="requirements.html">Requirements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="research.html">Research</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="architecture.html">System Architecture</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title">About SightLink</h1>
+            <p class="page-description">
+                Learn more about our project, team, and vision
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Project Overview -->
+            <section class="mb-5">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="section-title">Project Overview</h2>
+                        <p class="lead mb-4">
+                            SightLink is a COMP0016 Systems Engineering project focused on revolutionizing satellite imagery analysis 
+                            through advanced computer vision technology.
+                        </p>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <h3 class="h5 mb-3">Vision</h3>
+                                <p>To transform the way organizations process and analyze satellite imagery, making it more efficient, 
+                                   accurate, and accessible through cutting-edge technology.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <h3 class="h5 mb-3">Impact</h3>
+                                <p>Our solution aims to significantly reduce the time and resources required for satellite data analysis, 
+                                   enabling faster decision-making and insights.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Technology Stack -->
+            <section class="mb-5">
+                <h2 class="section-title">Technology Stack</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <div class="feature-icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <h3 class="card-title">Frontend</h3>
+                                <ul class="list-unstyled">
+                                    <li>React.js</li>
+                                    <li>Bootstrap</li>
+                                    <li>Modern UI/UX</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <div class="feature-icon">
+                                    <i class="fas fa-server"></i>
+                                </div>
+                                <h3 class="card-title">Backend</h3>
+                                <ul class="list-unstyled">
+                                    <li>Python</li>
+                                    <li>FastAPI</li>
+                                    <li>ML Models</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <div class="feature-icon">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <h3 class="card-title">Infrastructure</h3>
+                                <ul class="list-unstyled">
+                                    <li>Cloud Hosting</li>
+                                    <li>Docker</li>
+                                    <li>CI/CD Pipeline</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Team Section -->
+            <section class="team-section">
+                <h2 class="section-title">Our Team</h2>
+                <div class="container">
+                    <div class="team-grid">
+                        <!-- Kostas Demiris -->
+                        <div class="team-card" data-aos="fade-up">
+                            <div class="team-avatar">
+                                <img src="public/team/kostas.jpg" alt="Team Member"
+                                     onerror="this.src='https://ui-avatars.com/api/?name=Kostas+Demiris&background=3B82F6&color=fff'">
+                            </div>
+                            <div class="team-info">
+                                <h3 class="team-name">Kostas Demiris</h3>
+                                <p class="team-role">Team Lead & Backend Developer</p>
+                                <div class="team-social">
+                                    <a href="mailto:konstantinos.a.demiris@gmail.com" class="social-link" title="Email">
+                                        <i class="fas fa-envelope"></i>
+                                    </a>
+                                    <a href="https://github.com/KostasDemiris" target="_blank" class="social-link" title="GitHub">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Yiliu (Aiden) Li -->
+                        <div class="team-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="team-avatar">
+                                <img src="public/team/yiliu.jpg" alt="Team Member"
+                                     onerror="this.src='https://ui-avatars.com/api/?name=Yiliu+Li&background=3B82F6&color=fff'">
+                            </div>
+                            <div class="team-info">
+                                <h3 class="team-name">Aiden (Yiliu) Li</h3>
+                                <p class="team-role">Frontend Developer</p>
+                                <div class="team-social">
+                                    <a href="mailto:yiliu.li@outlook.com" class="social-link" title="Email">
+                                        <i class="fas fa-envelope"></i>
+                                    </a>
+                                    <a href="https://github.com/yiliu-li" target="_blank" class="social-link" title="GitHub">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Edward Tandanu -->
+                        <div class="team-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="team-avatar">
+                                <img src="public/team/edward.jpg" alt="Team Member"
+                                     onerror="this.src='https://ui-avatars.com/api/?name=Edward+Tandanu&background=3B82F6&color=fff'">
+                            </div>
+                            <div class="team-info">
+                                <h3 class="team-name">Edward Tandanu</h3>
+                                <p class="team-role">ML Engineer</p>
+                                <div class="team-social">
+                                    <a href="mailto:Edw00765@gmail.com" class="social-link" title="Email">
+                                        <i class="fas fa-envelope"></i>
+                                    </a>
+                                    <a href="https://github.com/edward-tandanu" target="_blank" class="social-link" title="GitHub">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Arif Imtiaz Khan -->
+                        <div class="team-card" data-aos="fade-up" data-aos-delay="300">
+                            <div class="team-avatar">
+                                <img src="public/team/arif.jpg" alt="Team Member"
+                                     onerror="this.src='https://ui-avatars.com/api/?name=Arif+Khan&background=3B82F6&color=fff'">
+                            </div>
+                            <div class="team-info">
+                                <h3 class="team-name">Arif Imtiaz Khan</h3>
+                                <p class="team-role">Full Stack Developer</p>
+                                <div class="team-social">
+                                    <a href="mailto:Arifimtiaz012@gmail.com" class="social-link" title="Email">
+                                        <i class="fas fa-envelope"></i>
+                                    </a>
+                                    <a href="https://github.com/arifimtiaz012" target="_blank" class="social-link" title="GitHub">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section class="contact-section">
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="lead mb-4">Interested in learning more about SightLink? We'd love to hear from you!</p>
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="mailto:contact@sightlink.com" class="btn btn-primary">
+                        <i class="fas fa-envelope me-2"></i>
+                        Contact Us
+                    </a>
+                    <a href="https://github.com/UCL-SightLink" target="_blank" class="btn btn-outline-primary">
+                        <i class="fab fa-github me-2"></i>
+                        View Project
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3 class="mb-3">SightLink</h3>
+                    <p class="mb-3">COMP0016 Systems Engineering Project</p>
+                    <div class="social-links mb-3">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <p class="text-muted mb-0">&copy; 2024 SightLink Project Team</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        const scrollTop = document.querySelector('.scroll-top');
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 100) {
+                scrollTop.classList.add('visible');
+            } else {
+                scrollTop.classList.remove('visible');
+            }
+        });
+
+        scrollTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html> 

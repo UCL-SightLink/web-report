@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design - SightLink</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" type="image/png" src="public/icon.png">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="public/icon.png" alt="SightLink Logo" class="brand-icon" />
+                SightLink
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="requirements.html">Requirements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="research.html">Research</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="algorithms.html">Algorithms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="design.html">Design</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="implementation.html">Implementation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="testing.html">Testing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="evaluation.html">Evaluation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="appendices.html">Appendices</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title">Design</h1>
+            <p class="page-description">
+                System architecture and design decisions
+            </p>
+            <!-- Design Navigation Tabs -->
+            <div class="design-tabs" data-aos="fade-up">
+                <button class="tab-btn active" data-tab="ui-design">
+                    <i class="fas fa-palette"></i>
+                    UI Design
+                </button>
+                <button class="tab-btn" data-tab="system-design">
+                    <i class="fas fa-sitemap"></i>
+                    System Design
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Tab Content -->
+            <div class="tab-content">
+                <!-- UI Design Tab -->
+                <div class="tab-pane active" id="ui-design">
+                    <!-- UI Design Evolution Section -->
+                    <section class="ui-design-section mb-5">
+                        <h2 class="section-title">UI Design Evolution</h2>
+                        <p class="section-description text-center mb-5">The progression of our user interface from initial concepts to final implementation</p>
+                        
+                        <div class="design-timeline">
+                            <!-- Version 1: Initial Draft -->
+                            <div class="design-card" data-aos="fade-up">
+                                <div class="design-header">
+                                    <h3><i class="fas fa-pencil-ruler"></i> Version 1: Initial Draft</h3>
+                                    <span class="version-badge">v1</span>
+                                </div>
+                                <div class="design-content">
+                                    <div class="design-gallery">
+                                        <img src="public/ui/1-1.png" alt="Initial UI - Homepage" class="gallery-img" />
+                                        <img src="public/ui/1-2.png" alt="Initial UI - Upload" class="gallery-img" />
+                                        <img src="public/ui/1-3.png" alt="Initial UI - Processing" class="gallery-img" />
+                                        <img src="public/ui/1-4.png" alt="Initial UI - Results" class="gallery-img" />
+                                    </div>
+                                    <div class="design-description">
+                                        <p class="step-description">Homepage: Simple landing page with clear project introduction and navigation</p>
+                                        <p class="step-description">Upload Interface: Basic drag-and-drop functionality for satellite image upload</p>
+                                        <p class="step-description">Processing View: Minimal status display showing analysis progress</p>
+                                        <p class="step-description">Results: Basic visualization of detected accessibility features</p>
+                                        <h4>Key Features:</h4>
+                                        <ul>
+                                            <li>Simple drag-and-drop interface for image upload</li>
+                                            <li>Basic processing status display</li>
+                                            <li>Minimal results visualization</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Version 2: Improved Interface -->
+                            <div class="design-card" data-aos="fade-up" data-aos-delay="100">
+                                <div class="design-header">
+                                    <h3><i class="fas fa-layer-group"></i> Version 2: Improved Interface</h3>
+                                    <span class="version-badge">v2</span>
+                                </div>
+                                <div class="design-content">
+                                    <div class="design-gallery">
+                                        <img src="public/ui/2-1.png" alt="V2 - Enhanced Homepage" class="gallery-img" />
+                                        <img src="public/ui/2-2.png" alt="V2 - Upload Interface" class="gallery-img" />
+                                        <img src="public/ui/2-3.png" alt="V2 - Processing View" class="gallery-img" />
+                                        <img src="public/ui/2-4.png" alt="V2 - Results Display" class="gallery-img" />
+                                    </div>
+                                    <div class="design-description">
+                                        <p class="step-description">Enhanced Homepage: Added feature previews and clearer call-to-action</p>
+                                        <p class="step-description">Improved Upload: Added file validation and format guidelines</p>
+                                        <p class="step-description">Better Processing: Detailed progress indicators and status messages</p>
+                                        <p class="step-description">Enhanced Results: Interactive map view with feature highlighting</p>
+                                        <h4>Improvements:</h4>
+                                        <ul>
+                                            <li>Enhanced visual feedback during upload</li>
+                                            <li>Improved processing status indicators</li>
+                                            <li>Better organized results presentation</li>
+                                            <li>More intuitive navigation flow</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Version 3: Final Design -->
+                            <div class="design-card" data-aos="fade-up" data-aos-delay="200">
+                                <div class="design-header">
+                                    <h3><i class="fas fa-check-circle"></i> Version 3: Final Design</h3>
+                                    <span class="version-badge final">v3</span>
+                                </div>
+                                <div class="design-content">
+                                    <div class="design-gallery">
+                                        <img src="public/ui/3-1.png" alt="Final - Homepage" class="gallery-img" />
+                                        <img src="public/ui/3-2.png" alt="Final - Upload Interface" class="gallery-img" />
+                                        <img src="public/ui/3-3.png" alt="Final - Processing" class="gallery-img" />
+                                        <img src="public/ui/3-4.png" alt="Final - Results View" class="gallery-img" />
+                                        <img src="public/ui/3-5.png" alt="Final - Advanced Features" class="gallery-img" />
+                                        <img src="public/ui/3-6.png" alt="Final - Settings" class="gallery-img" />
+                                    </div>
+                                    <div class="design-description">
+                                        <p class="step-description">Polished Homepage: Modern design with comprehensive feature overview</p>
+                                        <p class="step-description">Advanced Upload: Multi-file support with intelligent validation</p>
+                                        <p class="step-description">Real-time Processing: Detailed progress tracking with error handling</p>
+                                        <p class="step-description">Interactive Results: Rich map visualization with accessibility overlays</p>
+                                        <p class="step-description">Advanced Features: Custom filters and analysis options</p>
+                                        <p class="step-description">Settings Panel: Configurable parameters and user preferences</p>
+                                        <h4>Improvements:</h4>
+                                        <ul>
+                                            <li>Enhanced map controls and visualization</li>
+                                            <li>Advanced feature detection overlay system</li>
+                                            <li>Intuitive accessibility information display</li>
+                                            <li>Streamlined user workflow</li>
+                                        </ul>
+                                        <h4>Key Achievements:</h4>
+                                        <ul>
+                                            <li>Optimized user experience based on feedback</li>
+                                            <li>Improved accessibility features</li>
+                                            <li>Enhanced data visualization capabilities</li>
+                                        </ul>
+                                        <div class="mt-4">
+                                            <a href="http://localhost:3000/" target="_blank" class="btn btn-primary">
+                                                <i class="fas fa-external-link-alt me-2"></i>
+                                                Try Live Demo
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- System Design Tab -->
+                <div class="tab-pane" id="system-design">
+                    <section class="system-design-section mb-5">
+                        <h2 class="section-title">System Architecture</h2>
+                        <div class="architecture-content">
+                            <!-- Add your system design content here -->
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3 class="mb-3">SightLink</h3>
+                    <p class="mb-3">COMP0016 Systems Engineering Project</p>
+                    <div class="social-links mb-3">
+                        <a href="https://github.com/UCL-SightLink"><i class="fab fa-github"></i></a>
+                    </div>
+                    <p class="text-muted mb-0">&copy; 2024 SightLink Project Team</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Image Modal -->
+    <div class="img-modal" id="imageModal" onclick="closeModal()">
+        <img class="modal-img" id="modalImage" src="" alt="Enlarged view" />
+    </div>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        // Image Modal Functionality
+        const modal = document.getElementById('imageModal');
+        const modalImg = document.getElementById('modalImage');
+        const galleryImages = document.querySelectorAll('.gallery-img');
+
+        galleryImages.forEach(img => {
+            img.addEventListener('click', () => {
+                modal.classList.add('active');
+                modalImg.src = img.src;
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        function closeModal() {
+            modal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeModal();
+        });
+
+        // Handle smooth scrolling to sections
+        document.addEventListener('DOMContentLoaded', function() {
+            // Check if there's a hash in the URL
+            if (window.location.hash) {
+                const section = document.querySelector(window.location.hash);
+                if (section) {
+                    setTimeout(() => {
+                        section.scrollIntoView({ behavior: 'smooth' });
+                    }, 100);
+                }
+            }
+        });
+
+        // Tab Switching Logic
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        const tabPanes = document.querySelectorAll('.tab-pane');
+
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons and panes
+                tabBtns.forEach(b => b.classList.remove('active'));
+                tabPanes.forEach(p => p.classList.remove('active'));
+
+                // Add active class to clicked button and corresponding pane
+                btn.classList.add('active');
+                document.getElementById(btn.dataset.tab).classList.add('active');
+
+                // Update URL hash without scrolling
+                history.pushState(null, null, `#${btn.dataset.tab}`);
+            });
+        });
+
+        // Handle direct URL access with hash
+        window.addEventListener('load', () => {
+            const hash = window.location.hash.slice(1);
+            if (hash) {
+                const targetBtn = document.querySelector(`[data-tab="${hash}"]`);
+                if (targetBtn) targetBtn.click();
+            }
+        });
+    </script>
+</body>
+</html> 

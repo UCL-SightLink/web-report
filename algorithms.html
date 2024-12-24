@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorithms - SightLink</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" type="image/png" src="public/icon.png">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="public/icon.png" alt="SightLink Logo" class="brand-icon" />
+                SightLink
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="requirements.html">Requirements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="research.html">Research</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="algorithms.html">Algorithms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="design.html">Design</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="implementation.html">Implementation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="testing.html">Testing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="evaluation.html">Evaluation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="appendices.html">Appendices</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title">Algorithms</h1>
+            <p class="page-description">
+                Computer vision algorithms and implementation details
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Algorithm Hero -->
+            <section class="algorithm-hero mb-5">
+                <div class="hero-wrapper" data-aos="fade-up">
+                    <div class="hero-content">
+                        <div class="hero-badge">Computer Vision Pipeline</div>
+                        <h2>Intelligent Feature Detection</h2>
+                        <p>Our advanced AI system processes satellite imagery through a sophisticated pipeline, combining CNN and YOLO for accurate accessibility feature detection.</p>
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <div class="stat-icon">
+                                    <i class="fas fa-bullseye"></i>
+                                </div>
+                                <div class="stat-value">99.8%</div>
+                                <div class="stat-label">Accuracy Rate</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-icon">
+                                    <i class="fas fa-tachometer-alt"></i>
+                                </div>
+                                <div class="stat-value">0.5s</div>
+                                <div class="stat-label">Processing Time</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-icon">
+                                    <i class="fas fa-expand-arrows-alt"></i>
+                                </div>
+                                <div class="stat-value">10m²</div>
+                                <div class="stat-label">Resolution</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+                        <div class="tech-stack">
+                            <div class="tech-item">
+                                <div class="tech-icon">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <div class="tech-label">CNN</div>
+                            </div>
+                            <div class="tech-item">
+                                <div class="tech-icon">
+                                    <i class="fas fa-cube"></i>
+                                </div>
+                                <div class="tech-label">YOLO</div>
+                            </div>
+                            <div class="tech-item">
+                                <div class="tech-icon">
+                                    <i class="fas fa-map"></i>
+                                </div>
+                                <div class="tech-label">GIS</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pipeline Steps -->
+            <section class="pipeline-section">
+                <h2 class="section-title">Detection Pipeline</h2>
+                <div class="pipeline-flow">
+                    <div class="flow-line"></div>
+                    <div class="steps-wrapper">
+                        <div class="step-card" data-aos="fade-up">
+                            <div class="step-marker">01</div>
+                            <div class="step-content">
+                                <div class="step-header">
+                                    <div class="step-icon">
+                                        <i class="fas fa-satellite"></i>
+                                    </div>
+                                    <h3>Data Preprocessing</h3>
+                                </div>
+                                <div class="step-details">
+                                    <ul>
+                                        <li>Convert coordinate systems</li>
+                                        <li>Apply spatial transformations</li>
+                                        <li>Validate accuracy</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="step-card" data-aos="fade-up">
+                            <div class="step-marker">02</div>
+                            <div class="step-content">
+                                <div class="step-header">
+                                    <div class="step-icon">
+                                        <i class="fas fa-grid"></i>
+                                    </div>
+                                    <h3>Image Segmentation</h3>
+                                </div>
+                                <div class="step-details">
+                                    <ul>
+                                        <li>Create 10m × 10m grid segments</li>
+                                        <li>Maintain 1m overlap between tiles</li>
+                                        <li>Preserve georeferencing metadata</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="step-card" data-aos="fade-up">
+                            <div class="step-marker">03</div>
+                            <div class="step-content">
+                                <div class="step-header">
+                                    <div class="step-icon">
+                                        <i class="fas fa-brain"></i>
+                                    </div>
+                                    <h3>Initial CNN Detection</h3>
+                                </div>
+                                <div class="step-details">
+                                    <ul>
+                                        <li>Process each tile through CNN</li>
+                                        <li>Binary classification for feature presence</li>
+                                        <li>Filter tiles with potential features</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="step-card" data-aos="fade-up">
+                            <div class="step-marker">04</div>
+                            <div class="step-content">
+                                <div class="step-header">
+                                    <div class="step-icon">
+                                        <i class="fas fa-crop-alt"></i>
+                                    </div>
+                                    <h3>Context Window Creation</h3>
+                                </div>
+                                <div class="step-details">
+                                    <ul>
+                                        <li>Center on positive detections</li>
+                                        <li>Include surrounding tiles</li>
+                                        <li>Maintain spatial relationships</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="step-card" data-aos="fade-up">
+                            <div class="step-marker">05</div>
+                            <div class="step-content">
+                                <div class="step-header">
+                                    <div class="step-icon">
+                                        <i class="fas fa-box-open"></i>
+                                    </div>
+                                    <h3>YOLO OBB Detection</h3>
+                                </div>
+                                <div class="step-details">
+                                    <ul>
+                                        <li>Process context windows</li>
+                                        <li>Generate oriented bounding boxes</li>
+                                        <li>Calculate confidence scores</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="step-card" data-aos="fade-up">
+                            <div class="step-marker">06</div>
+                            <div class="step-content">
+                                <div class="step-header">
+                                    <div class="step-icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <h3>Feature Georeferencing</h3>
+                                </div>
+                                <div class="step-details">
+                                    <ul>
+                                        <li>Transform bounding boxes to coordinates</li>
+                                        <li>Apply spatial reference system</li>
+                                        <li>Generate location metadata</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="step-card" data-aos="fade-up">
+                            <div class="step-marker">07</div>
+                            <div class="step-content">
+                                <div class="step-header">
+                                    <div class="step-icon">
+                                        <i class="fas fa-file-export"></i>
+                                    </div>
+                                    <h3>Results Generation</h3>
+                                </div>
+                                <div class="step-details">
+                                    <ul>
+                                        <li>Format feature locations</li>
+                                        <li>Include confidence scores</li>
+                                        <li>Generate GeoJSON output</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3 class="mb-3">SightLink</h3>
+                    <p class="mb-3">COMP0016 Systems Engineering Project</p>
+                    <div class="social-links mb-3">
+                        <a href="https://github.com/UCL-SightLink"><i class="fab fa-github"></i></a>
+                    </div>
+                    <p class="text-muted mb-0">&copy; 2024 SightLink Project Team</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+</body>
+</html> 

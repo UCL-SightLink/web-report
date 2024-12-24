@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SightLink - Satellite Imagery Analysis</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" type="image/png" src="public/icon.png">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="public/icon.png" alt="SightLink Logo" class="brand-icon" />
+                SightLink
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="requirements.html">Requirements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="research.html">Research</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="algorithms.html">Algorithms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="design.html">Design</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="implementation.html">Implementation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="testing.html">Testing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="evaluation.html">Evaluation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="appendices.html">Appendices</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="hero-title">Transforming Satellite Imagery Analysis</h1>
+            <p class="hero-subtitle">
+                Advanced computer vision technology for efficient and accurate satellite data processing
+            </p>
+            <div class="hero-buttons">
+                <a href="#features" class="btn btn-primary hero-btn me-3">
+                    <span>Explore Features</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="documentation.html" class="btn btn-outline-primary hero-btn">
+                    <span>Documentation</span>
+                    <i class="fas fa-book"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Features Section -->
+            <section id="features" class="mb-5">
+                <h2 class="section-title2 text-center">Key Features</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <div class="feature-icon">
+                                    <i class="fas fa-eye"></i>
+                                </div>
+                                <h3 class="card-title">Advanced CV Technology</h3>
+                                <p class="card-text">State-of-the-art computer vision algorithms for satellite imagery analysis</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <div class="feature-icon">
+                                    <i class="fas fa-bolt"></i>
+                                </div>
+                                <h3 class="card-title">Real-time Processing</h3>
+                                <p class="card-text">Fast and efficient processing of large-scale satellite data</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <div class="feature-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <h3 class="card-title">Secure & Reliable</h3>
+                                <p class="card-text">Enterprise-grade security with reliable infrastructure</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Mission Section -->
+            <section id="mission" class="mb-5">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h2 class="section-title">Our Mission</h2>
+                        <p class="lead mb-0">
+                            SightLink is dedicated to revolutionizing the way we analyze and understand satellite imagery. 
+                            Our platform combines cutting-edge computer vision technology with user-friendly interfaces 
+                            to make satellite data analysis accessible and efficient for everyone.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Abstract Section -->
+            <section class="abstract-section mb-5">
+                <div class="abstract-header" data-aos="fade-up">
+                    <h2>Project Abstract</h2>
+                    <p>Revolutionizing Accessibility Through AI-Powered Satellite Analysis</p>
+                </div>
+                <div class="abstract-content" data-aos="fade-up">
+                    <div class="abstract-step">
+                        <div class="abstract-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>Problem Statement</h3>
+                        <p>
+                            Accessibility information in satellite imagery remains largely untapped and unstructured, 
+                            making it challenging for developers and organizations to integrate geographical accessibility 
+                            data into their applications. Current solutions lack reliable automated methods for detecting 
+                            and georeferencing critical accessibility features like pedestrian crossings and park benches 
+                            from aerial imagery.
+                        </p>
+                    </div>
+                    
+                    <div class="abstract-step">
+                        <div class="abstract-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Our Solution</h3>
+                        <p>
+                            SightLink provides a comprehensive AI-powered API that processes Digimap-formatted satellite 
+                            data to identify and georeference accessibility features. Our solution combines YOLO-based 
+                            object detection with advanced computer vision techniques, implemented through a modern 
+                            architecture featuring a React-based frontend, Azure-hosted backend, and dedicated database 
+                            for efficient data management. The system segments images into 20mx20m tiles with 1m overlap, 
+                            ensuring precise feature detection and location mapping.
+                        </p>
+                    </div>
+                    
+                    <div class="abstract-step">
+                        <div class="abstract-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Achievement & Impact</h3>
+                        <p>
+                            Our system achieves high reliability in feature detection while maintaining strict safety 
+                            standards to prevent false positives. The API has been successfully integrated with 
+                            accessibility platforms, enabling developers to enhance their applications with accurate 
+                            geographical accessibility data. This contribution advances the field of automated 
+                            accessibility mapping and supports the development of more inclusive navigation solutions 
+                            for wheelchair users and others with mobility needs.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Video Introduction Section -->
+            <section class="video-section mb-5">
+                <div class="video-container" data-aos="fade-up">
+                    <h2 class="section-title">Project Demo</h2>
+                    <div class="video-wrapper">
+                        <iframe 
+                            src="https://www.youtube.com/embed/qYSGO7Mq1uA" 
+                            title="SightLink Project Demo"
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="video-description">
+                        <p>Watch our comprehensive demo showcasing SightLink's key features and functionalities</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Team Section -->
+            <section class="team-section mb-5">
+                <div class="container">
+                    <h2 class="section-title">Our Team</h2>
+                    <div class="team-grid" data-aos="fade-up">
+                        <div class="team-member">
+                            <div class="member-avatar">
+                                <img src="public/team/Kostas.jpg" alt="Kostas Demiris" class="member-avatar-image">
+                            </div>
+                            <div class="member-info">
+                                <h3>Kostas Demiris</h3>
+                                <p class="member-role">Team Lead</p>
+                                <p class="member-role">Researcher</p>
+                                <p class="member-role">ML Engineer</p>
+                                <div class="member-links">
+                                    <a href="mailto:konstantinos.a.demiris@gmail.com" class="social-link">
+                                        <i class="fas fa-envelope"></i>
+                                    </a>
+                                    <a href="https://github.com/KostasDemiris" target="_blank" class="social-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/kostas-agusti-demiris/" target="_blank" class="social-link">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="team-member">
+                            <div class="member-avatar">
+                                <img src="public/team/Aiden.jpg" alt="Aiden Li" class="member-avatar-image">
+                            </div>
+                            <div class="member-info">
+                                <h3>Aiden (Yiliu) Li</h3>
+                                <p class="member-role">Frontend Developer</p>
+                                <p class="member-role">Researcher</p>
+                                <p class="member-role">ML Engineer</p>
+                                <div class="member-links">
+                                    <a href="mailto:yiliu.li@outlook.com" class="social-link">
+                                        <i class="fas fa-envelope"></i>
+                                    </a>
+                                    <a href="https://github.com/yiliu-li" target="_blank" class="social-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/aiden-li-510533261/" target="_blank" class="social-link">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="team-member">
+                            <div class="member-avatar">
+                                <img src="public/team/Edward.jpg" alt="Edward Tandanu" class="member-avatar-image">
+
+                            </div>
+                            <div class="member-info">
+                                <h3>Edward Tandanu</h3>
+                                <p class="member-role">Client Liaison</p>
+                                <p class="member-role">Backend Developer</p>
+                                <p class="member-role">Testing Engineer</p>
+                                <div class="member-links">
+                                    <a href="mailto:Edw00765@gmail.com" class="social-link">
+                                        <i class="fas fa-envelope"></i>
+                                    </a>
+                                    <a href="https://github.com/Edw00765" target="_blank" class="social-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/edward-tandanu-631b52313/" target="_blank" class="social-link">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="team-member">
+                            <div class="member-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="member-info">
+                                <h3>Arif Imtiaz Khan</h3>
+                                <p class="member-role">Data Engineer</p>
+                                <p class="member-role">Report Editor</p>
+                                <p class="member-role">Backend Developer</p>
+                                <div class="member-links">
+                                    <a href="mailto:Arifimtiaz012@gmail.com" class="social-link">
+                                        <i class="fas fa-envelope"></i>
+                                    </a>
+                                    <a href="https://github.com/arifimtiaz012" target="_blank" class="social-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/arif-imtiaz-khan-11b9bb22b/" target="_blank" class="social-link">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Clients Section -->
+            <section class="clients-section mb-5">
+                <div class="container">
+                    <h2 class="section-title">Our Partners</h2>
+                    <div class="clients-grid" data-aos="fade-up">
+                        <a href="https://www.ucl.ac.uk/computer-science/" target="_blank" class="client-card">
+                            <div class="client-image">
+                                <img src="public/client/client-1.png" alt="UCL Computer Science Logo" />
+                            </div>
+                            <div class="client-info">
+                                <h3>UCL Computer Science</h3>
+                                <p>Academic Partner</p>
+                            </div>
+                        </a>
+                        
+                        <a href="https://www.wheelchair-alliance.co.uk" target="_blank" class="client-card">
+                            <div class="client-image">
+                                <img src="public/client/client-2.png" alt="Wheelchair Alliance Logo" />
+                            </div>
+                            <div class="client-info">
+                                <h3>Wheelchair Alliance</h3>
+                                <p>Research Partner</p>
+                            </div>
+                        </a>
+
+                        
+                        <a href="https://www.microsoft.com/" target="_blank" class="client-card">
+                            <div class="client-image">
+                                <img src="public/client/client-3.png" alt="Microsoft Logo" />
+                            </div>
+                            <div class="client-info">
+                                <h3>Microsoft</h3>
+                                <p>Industry Partner</p>
+                            </div>
+                        </a>
+                        
+                        <a href="https://www.esriuk.com/" target="_blank" class="client-card">
+                            <div class="client-image">
+                                <img src="public/client/client-4.png" alt="Esri UK Logo" />
+                            </div>
+                            <div class="client-info">
+                                <h3>Esri UK</h3>
+                                <p>Research Partner</p>
+                            </div>
+                        </a>
+                        
+                        <a href="https://www.microsoft.com/en-us/research/product/soundscape/" target="_blank" class="client-card">
+                            <div class="client-image">
+                                <img src="public/client/client-5.png" alt="Soundscape Logo" />
+                            </div>
+                            <div class="client-info">
+                                <h3>Soundscape Community</h3>
+                                <p>Innovation Partner</p>
+                            </div>
+                        </a>
+
+
+                        <a href="https://azure.microsoft.com/en-gb/" target="_blank" class="client-card">
+                            <div class="client-image">
+                                <img src="public/client/client-6.png" alt="Esri UK Logo" />
+                            </div>
+                            <div class="client-info">
+                                <h3>Azure</h3>
+                                <p>Cloud Partner</p>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3 class="mb-3">SightLink</h3>
+                    <p class="mb-3">COMP0016 Systems Engineering Project</p>
+                    <div class="social-links mb-3">
+                        <a href="https://github.com/UCL-SightLink"><i class="fab fa-github"></i></a>
+                    </div>
+                    <p class="text-muted mb-0">&copy; 2024 SightLink Project Team</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        const scrollTop = document.querySelector('.scroll-top');
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 100) {
+                scrollTop.classList.add('visible');
+            } else {
+                scrollTop.classList.remove('visible');
+            }
+        });
+
+        scrollTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>

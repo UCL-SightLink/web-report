@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requirements - SightLink</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" type="image/png" src="public/icon.png">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="public/icon.png" alt="SightLink Logo" class="brand-icon" />
+                SightLink
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="requirements.html">Requirements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="research.html">Research</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="algorithms.html">Algorithms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="design.html">Design</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="implementation.html">Implementation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="testing.html">Testing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="evaluation.html">Evaluation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="appendices.html">Appendices</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title">Requirements</h1>
+            <p class="page-description">
+                Project requirements and specifications
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Partner Introduction Section -->
+            <section class="partner-intro-section mb-5">
+                <h2 class="section-title">Partner Introduction</h2>
+                <div class="card" data-aos="fade-up">
+                    <div class="card-body">
+                        <div class="partner-content">
+                            <p class="lead">
+                                Microsoft's Soundscape project, in collaboration with the Wheelchair Alliance, 
+                                aims to revolutionize urban navigation for people with mobility needs. This 
+                                partnership brings together technological innovation and real-world accessibility 
+                                requirements.
+                            </p>
+                            <div class="partner-highlights mt-4">
+                                <div class="highlight-item">
+                                    <i class="fas fa-handshake"></i>
+                                    <h4>Microsoft Soundscape</h4>
+                                    <p>A technology leader in accessibility solutions, providing technical expertise 
+                                       and platform integration capabilities.</p>
+                                </div>
+                                <div class="highlight-item">
+                                    <i class="fas fa-users"></i>
+                                    <h4>Wheelchair Alliance</h4>
+                                    <p>A community-driven organization offering invaluable insights into accessibility 
+                                       needs and user requirements.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Project Background Section -->
+            <section class="background-section mb-5">
+                <h2 class="section-title">Project Background</h2>
+                <div class="card" data-aos="fade-up">
+                    <div class="card-body">
+                        <p class="lead mb-4">
+                            Current navigation systems lack comprehensive accessibility information, creating 
+                            significant challenges for wheelchair users in urban environments.
+                        </p>
+                        <div class="background-points">
+                            <div class="point">
+                                <i class="fas fa-map-marked-alt"></i>
+                                <h4>Current Challenges</h4>
+                                <ul>
+                                    <li>Limited accessibility data in existing mapping solutions</li>
+                                    <li>Manual data collection is time-consuming and often incomplete</li>
+                                    <li>Lack of automated systems for identifying accessibility features</li>
+                                </ul>
+                            </div>
+                            <div class="point">
+                                <i class="fas fa-lightbulb"></i>
+                                <h4>Opportunity</h4>
+                                <ul>
+                                    <li>Leverage satellite imagery for automated feature detection</li>
+                                    <li>Create a scalable solution for accessibility mapping</li>
+                                    <li>Integrate with existing navigation platforms</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Project Goals Section -->
+            <section class="goals-section mb-5">
+                <h2 class="section-title">Project Goals</h2>
+                <div class="goals-grid" data-aos="fade-up">
+                    <div class="goal-card">
+                        <div class="goal-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3>Primary Goal</h3>
+                        <p>Develop an AI-powered system to automatically detect and classify accessibility 
+                           features from satellite imagery.</p>
+                    </div>
+                    <div class="goal-card">
+                        <div class="goal-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>Technical Objectives</h3>
+                        <ul>
+                            <li>Implement robust feature detection algorithms</li>
+                            <li>Ensure accurate georeferencing of detected features</li>
+                            <li>Create a scalable and maintainable system architecture</li>
+                        </ul>
+                    </div>
+                    <div class="goal-card">
+                        <div class="goal-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Success Metrics</h3>
+                        <ul>
+                            <li>High accuracy in feature detection (>90%)</li>
+                            <li>Efficient processing of large-scale imagery</li>
+                            <li>Seamless integration with existing platforms</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Personas Section -->
+            <section class="personas-section mb-5">
+                <h2 class="section-title">User Personas</h2>
+                <div class="row g-4">
+                    <!-- Developer Persona -->
+                    <div class="col-md-6">
+                        <div class="persona-card">
+                            <div class="persona-header">
+                                <div class="persona-avatar developer">
+                                    <img src="public/male.png" alt="Joe Goodman" />
+                                </div>
+                                <div class="persona-info">
+                                    <h3>Joe Goodman</h3>
+                                    <p class="persona-role">Developer</p>
+                                </div>
+                            </div>
+                            <div class="persona-content">
+                                <div class="persona-quote">
+                                    <i class="fas fa-quote-left"></i>
+                                    <p>"I need accurate APIs and data that can be significant"</p>
+                                </div>
+                                <div class="persona-details">
+                                    <h4>Motivations</h4>
+                                    <ul>
+                                        <li>Wants to integrate satellite data into their applications</li>
+                                        <li>Looking for well-documented APIs and Accessibility Tools</li>
+                                        <li>Being able to recognize points of interest</li>
+                                        <li>Using data for meaningful insights</li>
+                                    </ul>
+                                    <h4>Pain points</h4>
+                                    <ul>
+                                        <li>Inconsistent results and unreliable data</li>
+                                        <li>Lack of flexibility to integrate points of interest</li>
+                                        <li>Technical and visual documentation issues</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Charity Employee Persona -->
+                    <div class="col-md-6">
+                        <div class="persona-card">
+                            <div class="persona-header">
+                                <div class="persona-avatar charity">
+                                    <img src="public/female.png" alt="Emily Carter" />
+                                </div>
+                                <div class="persona-info">
+                                    <h3>Emily Carter</h3>
+                                    <p class="persona-role">Charity Employee<br>Accessibility Advocate</p>
+                                </div>
+                            </div>
+                            <div class="persona-content">
+                                <div class="persona-quote">
+                                    <i class="fas fa-quote-left"></i>
+                                    <p>"I want to direct wheelchair users to aid their social awareness"</p>
+                                </div>
+                                <div class="persona-details">
+                                    <h4>Motivations</h4>
+                                    <ul>
+                                        <li>Improve accessibility for wheelchair users</li>
+                                        <li>Empower users to navigate safely</li>
+                                        <li>Making points of interest accessible</li>
+                                        <li>Helping users find suitable routes</li>
+                                    </ul>
+                                    <h4>Pain points</h4>
+                                    <ul>
+                                        <li>Limited access to accessibility data</li>
+                                        <li>Difficulty in finding suitable routes</li>
+                                        <li>Lack of real-time accessibility information</li>
+                                        <li>Complex user interfaces</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- MoSCoW Requirements Section -->
+            <section class="moscow-section mb-5">
+                <h2 class="section-title">MoSCoW Requirements</h2>
+                <p class="section-description text-center mb-5">Project requirements prioritized using the MoSCoW method for development until end of December</p>
+                
+                <div class="moscow-grid">
+                    <!-- Must Have -->
+                    <div class="moscow-card must-have">
+                        <div class="moscow-header">
+                            <h3><i class="fas fa-check-double"></i> Must Have</h3>
+                            <p class="moscow-subtitle">Provides Minimum Usable Subset of requirements</p>
+                        </div>
+                        <ul class="moscow-list">
+                            <li>
+                                <strong>Image Segmentation & Georeferencing:</strong> Process regional coverage images into 20mx20m tile regions with 1m overlap, using Easting/Northings, Latitude/Longitude and What3Words tags
+                            </li>
+                            <li>
+                                <strong>Pedestrian Crossing Recognition:</strong> Implement classification model for feature detection and bounding box regression for crosswalk location and dimensions
+                            </li>
+                            <li>
+                                <strong>Maximum Reliability:</strong> Prioritize model reliability and safety over optimization and coverage completeness to ensure user well-being
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Should Have -->
+                    <div class="moscow-card should-have">
+                        <div class="moscow-header">
+                            <h3><i class="fas fa-arrow-trend-up"></i> Should Have</h3>
+                            <p class="moscow-subtitle">Very important but can ship without</p>
+                        </div>
+                        <ul class="moscow-list">
+                            <li>
+                                <strong>Automated Data Lookup:</strong> Location-based aerial/satellite data download system
+                            </li>
+                            <li>
+                                <strong>Park Bench Recognition:</strong> Classification model for bench detection with location and dimension analysis
+                            </li>
+                            <li>
+                                <strong>Platform Integration:</strong> Compatibility with Group 14's platform and interface provision
+                            </li>
+                            <li>
+                                <strong>Multi-format Support:</strong> Process various aerial/satellite data formats into compatible model inputs
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Could Have -->
+                    <div class="moscow-card could-have">
+                        <div class="moscow-header">
+                            <h3><i class="fas fa-plus-circle"></i> Could Have</h3>
+                            <p class="moscow-subtitle">Nice to have features</p>
+                        </div>
+                        <ul class="moscow-list">
+                            <li>
+                                <strong>Automated Annotation:</strong> OpenStreetMap integration for training data generation
+                            </li>
+                            <li>
+                                <strong>GUI/WebApp:</strong> User-friendly interface with drag-and-drop features
+                            </li>
+                            <li>
+                                <strong>Extended Recognition:</strong> Additional feature detection (e.g., ramps)
+                            </li>
+                            <li>
+                                <strong>Obstruction Detection:</strong> Cloud coverage analysis and multi-dataset cross-referencing
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Won't Have -->
+                    <div class="moscow-card wont-have">
+                        <div class="moscow-header">
+                            <h3><i class="fas fa-clock"></i> Won't Have</h3>
+                            <p class="moscow-subtitle">Beyond current scope</p>
+                        </div>
+                        <ul class="moscow-list">
+                            <li>
+                                <strong>Hazard Detection:</strong> Due to resolution limitations in current datasets
+                            </li>
+                            <li>
+                                <strong>Live Updates:</strong> Analysis limited to historical and user inputs
+                            </li>
+                            <li>
+                                <strong>Speech Interface:</strong> Natural language processing system (shelved for now)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3 class="mb-3">SightLink</h3>
+                    <p class="mb-3">COMP0016 Systems Engineering Project</p>
+                    <div class="social-links mb-3">
+                        <a href="https://github.com/UCL-SightLink"><i class="fab fa-github"></i></a>
+                    </div>
+                    <p class="text-muted mb-0">&copy; 2024 SightLink Project Team</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+</body>
+</html> 
